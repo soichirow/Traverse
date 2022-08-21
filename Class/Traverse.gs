@@ -89,8 +89,17 @@ class Traverse {
     }
     return new Traverse(result)
   }
-}
+  /**
+   * インスタンスの値を返すメソッド
+   * @param {number} index デフォルトは0
+   * @return {any} - value
+   */
+  getValue(index = 0) {
+    const value = this.object[index]
+    return value
 
+  }
+}
 
 
 
